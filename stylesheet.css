@@ -58,15 +58,6 @@
 		position: absolute;
 		right: 0;
 		left: 0;
-		top: -20px;
-		-webkit-transition: top .5s;
-		-moz-transition: top .5s;
-		-o-transition: top .5s;
-		transition: top .5s;
-	}
-
-	#sr-header-area:hover {
-		top: 0;
 	}
 
 	#sr-header-area a {
@@ -138,6 +129,8 @@
 		-moz-box-shadow: 0 1px 3px #ccc;
 		box-shadow: 0 1px 3px #ccc;
 	}
+
+	.subbarlink.gold {color: #FFA200!important;}
 
 /* 1.2 HEADER PICTURES */
 	input[name="uh"] ~ a:after { /*  Random image container */
@@ -228,118 +221,71 @@
 	#header .tabmenu {
 		display: block;
 		position: absolute;
-		top: 168px;
+		top: 160px;
 		margin: 0;
-		padding: 0;
-		height: 44px;
 		background-color: transparent;
 		border-bottom: 0;
-		color: #999;
-		z-index:95;
+		z-index: 95;
 		text-align: center!important;
+		vertical-align: middle;
+		padding: 8px 0px;
 	}
 
-	.tabmenu li {
+	#header .tabmenu li{margin: 0px;}
+
+	#header .tabmenu a {
+		font-size: 0;
+		height: 17px;
 		display: inline-block;
-		margin:7px 0 0 0;
-		z-index:96;
+		background-color: white;
+		font-family: sans-serif;
+		font-weight: lighter;
+		color: transparent;
+		padding: 4px 12px 20px 17px;
+		border-top: 4px solid transparent;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
 	}
 
-	.tabmenu li a {
-		padding: 8px;
-		background-color: transparent;
-		border: 0;
-		border-bottom: 3px solid transparent;
-		color: #999;
-		font-weight: normal;
-		font-size: 22px;
-		font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
-		z-index:95;
+	#header .tabmenu li.selected a {
+		color: #D13C47;
+		border: none;
+		border-top: 4px solid #D13C47!important;
 	}
 
-	.tabmenu li a:hover {
-		border-bottom-color: #ED1C24;
-		color: #555;
+	#header .tabmenu a:hover {
 		text-decoration: none;
-		background-color: rgba(255,0,0,.02);
-		box-shadow: 0 0 5px #ddd inset;
+		background: #D13C47!important;
+		color: white!important;
+		border-top: 4px solid #D13C47!important;
+		font-size: 12px;
 	}
 
-	.tabmenu li.selected a {
-		z-index: 100;
-		background-color: rgba(255,0,0,.05);
-		border: 0;
-		border-bottom: 3px solid #CE1126;
-		color: #111;
-		font-size: 22px;
-		font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
-		padding: 8px;
-		box-shadow: 0 0 10px #ccc inset;
-	}
-	.tabmenu li.selected a:hover {
-		border-color: #FF8E8D;
-	}
-
-	#header .tabmenu a{
-		width: 45px;
-		height: 42px;
-		position: relative;
-		top: -7px;
-		text-indent: -999em;
-		padding: 0;
+	#header .tabmenu a:before{
+		background-image: url(%%tabmenu%%);
+		content: "";
 		display: inline-block;
-		opacity: .6;
-		margin: 0 0;
-		background: url(%%tabmenu%%);
+		height: 20px;
+		width: 20px;
+		position: relative;
+		right: 5px;
+		top: 7px;
 	}
-
-	#header .tabmenu a:hover{opacity: .8;}
-
-	#header .tabmenu a:after{
-		content: "placeholder";
-		display: block;
-		font-size: 15px;
-		color: black;
-		position: absolute;
-		top: 45px;
-		opacity: 0;
-	}
-
-	#header .tabmenu .selected a {opacity: 1;}
-
-	#header .tabmenu [href$="/r/indoclone/"] {background-position:   0  -1px;}
-	#header .tabmenu [href$="/new/"] {background-position: -45px  -1px;}
-	#header .tabmenu [href$="/rising/"] {background-position: -90px  -1px;}
-	#header .tabmenu [href$="/controversial/"] {background-position: -135px -1px;}
-	#header .tabmenu [href$="/top/"] {background-position: -180px -1px;}
-	#header .tabmenu [href$="/gilded/"] {background-position: -225px -1px;}
-	#header .tabmenu [href$="/wiki/"] {background-position: -405px -1px;}
-	#header .tabmenu [href$="/ads/"] {background-position: -270px -1px;}
-	#header .tabmenu [href*="/comments/"] {background-position: -450px -1px!important;}
-	#header .tabmenu [href*="/related/"] {background-position: -360px -1px!important;}
-	#header .tabmenu [href*="/duplicates/"] {background-position: -495px -1px!important;}
-	#header .tabmenu a#viewImagesButton {background-position: -315px -1px!important;}
-
-	#header .tabmenu [href$="/r/indoclone/"]:after {content:"HOT"; text-indent:11px;}
-	#header .tabmenu [href$="/new/"]:after {content:"NEW"; text-indent:8px;}
-	#header .tabmenu [href$="/rising/"]:after {content:"RISING"; text-indent:2px;}
-	#header .tabmenu [href$="/controversial/"]:after {content:"CONTROVERSIAL"; text-indent:-27px;}
-	#header .tabmenu [href$="/top/"]:after {content:"TOP"; text-indent:11px;}
-	#header .tabmenu [href$="/gilded/"]:after {content:"GILDED"; text-indent:0;}
-	#header .tabmenu [href$="/wiki/"]:after {content:"WIKI"; text-indent:9px;}
-	#header .tabmenu [href$="/ads/"]:after {content:"PROMOTED"; text-indent:-12px;}
-	#header .tabmenu [href*="/comments/"] :after {content:"COMMENTS"; text-indent:-14px;}
-	#header .tabmenu [href*="/related/"]:after {content:"RELATED"; text-indent:-4px;}
-	#header .tabmenu [href*="/duplicates/"]:after {content:"DUPLICATES"; text-indent:-14px;}
-	#header .tabmenu a#viewImagesButton:after {content:"VIEW IMAGES"; text-indent:-19px;}
-
-	#header .tabmenu a:hover:after{
-		opacity:1;
-		-webkit-transition:.5s opacity;
-		-moz-transition:.5s opacity;
-		-o-transition:.5s opacity;
-		transition:.5s opacity;
-	}
+	
+	#header .tabmenu [href$="/r/indoclone/"]:before {background-position: 0px 0px}
+	#header .tabmenu [href$="/new/"]:before {background-position: -20px 0px}
+	#header .tabmenu [href$="/rising/"]:before {background-position: -40px 0px}
+	#header .tabmenu [href$="/controversial/"]:before {background-position: -60px 0px}
+	#header .tabmenu [href$="/top/"]:before {background-position: 0px -20px}
+	#header .tabmenu [href$="/gilded/"]:before {background-position: -20px -20px}
+	#header .tabmenu [href$="/wiki/"]:before {background-position: -40px -20px}
+	#header .tabmenu [href$="/ads/"]:before {background-position: -60px -20px}
+	#header .tabmenu [href*="/comments/"]:before {background-position: 0px -40px}
+	#header .tabmenu [href*="/related/"]:before {background-position: -20px -40px}
+	#header .tabmenu [href*="/duplicates/"]:before {background-position: -40px -40px}
+	#header .tabmenu a#viewImagesButton:before {background-position: -60px -40px}
 
 /* 1.5 USER BAR */
 	#header-bottom-right {
