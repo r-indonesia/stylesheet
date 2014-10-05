@@ -1,14 +1,5 @@
 
-	
-	.user {color: #333;}
-	.loggedin .user {color: #333;}
 
-	#header-bottom-right a {
-		color: #333;
-		font-weight: normal;
-		font-size: 15px;
-		z-index:97;
-	}
 
 	#header-bottom-right a:hover {
 		border-bottom: 1px solid #FF8E8D;
@@ -16,19 +7,9 @@
 		text-decoration: none;
 	}
 
-	#mail {
-		overflow: visible;
-		width: 16px;
-		height: 16px;
-		background-image: url(%%spritesheet%%) !important;
-	}
-
 	#mail:hover, #modmail:hover {
 		border-bottom: 0px solid !important;
 	}
-
-	#mail.nohavemail {background-position: -64px 0px;}
-	#mail.havemail   {background-position:-80px 0px;}
 
 	#mail.havemail:before, #modmail.havemail:before  {
 		display: block;
@@ -55,8 +36,6 @@
 		background-image: url(%%spritesheet%%) !important;
 	}
 
-	#modmail.havemail   {background-position:-112px 0px;}
-	#modmail.nohavemail {background-position:-96px 0px;}
 	#modmail.havemail:before {background-position: -151px -50px; margin-right: 40px;}
 
 	#header-bottom-right a.pref-lang, .loggedin .logout a{
@@ -82,13 +61,6 @@
 	}
 	
 	.loggedin .logout a {background-position: -80px -49px;}
-
-	.gearIcon {
-		background-image: url(%%spritesheet%%)!important;
-		background-position: -80px -65px!important;
-		height: 16px!important;
-		width: 16px!important;
-	}
 	
 	
 	
