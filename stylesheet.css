@@ -38,6 +38,7 @@
 		z-index: 98;
 		width: 44px;
 		height: 44px;
+<<<<<<< HEAD
 		background-image: url(%%sprites%%);
 		background-repeat: no-repeat;
 		background-position: 0 -228px;
@@ -51,6 +52,14 @@
 		from {background-position: 0 -228px;}
 		to {background-position: -176px -228px;}
 	}
+=======
+		background-image: url(%%spritesheet%%);
+		background-position: 0 -226px;
+		background-repeat: no-repeat;
+	}
+
+	#header-img:hover {background-position: -44px -226px;}
+>>>>>>> origin/master
 
 /* 1.1 TOP MOST HEADER */
 	#sr-header-area {
@@ -205,12 +214,19 @@
 	.pagename a {
 		margin: 0;
 		position: absolute;
+<<<<<<< HEAD
 		top: 32px;
+=======
+		top: 29px;
+>>>>>>> origin/master
 		left: 0;
 		right: 0;
 		font-size: 0;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 	.pagename a {
 		width: 320px;
 		height: 130px;
@@ -229,8 +245,12 @@
 		-o-transition: opacity .25s ease;
 		transition: opacity .25s ease;
 	}
+<<<<<<< HEAD
 
 	.pagename a:hover {opacity: 1;}
+=======
+	.pagename a:hover {background-position: 0% 100%;}
+>>>>>>> origin/master
 
 /* 1.4 TAB MENU */
 	#header .tabmenu {
@@ -279,7 +299,11 @@
 	}
 
 	#header .tabmenu a:before{
+<<<<<<< HEAD
 		background-image: url(%%sprites%%);
+=======
+		background-image: url(%%tabmenu%%);
+>>>>>>> origin/master
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -289,6 +313,7 @@
 		top: 7px;
 	}
 	
+<<<<<<< HEAD
 	#header .tabmenu [href*="/r/indo"]:before {background-position: -240px 0px}
 	#header .tabmenu [href$="/new/"]:before {background-position: -260px 0px}
 	#header .tabmenu [href$="/rising/"]:before {background-position: -280px 0px}
@@ -301,6 +326,20 @@
 	#header .tabmenu [href*="/related/"]:before {background-position: -260px -40px}
 	#header .tabmenu [href*="/duplicates/"]:before {background-position: -280px -40px}
 	#header .tabmenu a#viewImagesButton:before {background-position: -300px -40px}
+=======
+	#header .tabmenu [href$="/r/indoclone/"]:before {background-position: 0px 0px}
+	#header .tabmenu [href$="/new/"]:before {background-position: -20px 0px}
+	#header .tabmenu [href$="/rising/"]:before {background-position: -40px 0px}
+	#header .tabmenu [href$="/controversial/"]:before {background-position: -60px 0px}
+	#header .tabmenu [href$="/top/"]:before {background-position: 0px -20px}
+	#header .tabmenu [href$="/gilded/"]:before {background-position: -20px -20px}
+	#header .tabmenu [href$="/wiki/"]:before {background-position: -40px -20px}
+	#header .tabmenu [href$="/ads/"]:before {background-position: -60px -20px}
+	#header .tabmenu [href*="/comments/"]:before {background-position: 0px -40px}
+	#header .tabmenu [href*="/related/"]:before {background-position: -20px -40px}
+	#header .tabmenu [href*="/duplicates/"]:before {background-position: -40px -40px}
+	#header .tabmenu a#viewImagesButton:before {background-position: -60px -40px}
+>>>>>>> origin/master
 
 /* 1.5 USER BAR */
 	#header-bottom-right {
@@ -338,8 +377,13 @@
 
 	a#mail.nohavemail {background-position: -96px -66px!important; top:5px!important;}
 	a#mail.havemail   {background-position:-112px -66px!important; top:6px!important;}
+<<<<<<< HEAD
 	a#modmail.havemail   {background-position:-144px -66px!important; top:-1px!important;}
 	a#modmail.nohavemail {background-position:-128px -66px!important; top:-1px!important;}
+=======
+	a#modmail.havemail   {background-position:-128px -66px!important; top:-1px!important;}
+	a#modmail.nohavemail {background-position:-144px -66px!important; top:-1px!important;}
+>>>>>>> origin/master
 
 	.pref-lang {
 		display: inline-block;
@@ -1603,7 +1647,11 @@
 		border: 0!important;
 		border-radius: 0!important;
 		background-color: #fff;
+<<<<<<< HEAD
 		box-shadow: 0 1px 2px #ddd;
+=======
+		box-shadow: 0 1px 3px #ccc;
+>>>>>>> origin/master
 	}
 
 	.res-commentBoxes .comment .comment {background-color:#fafafa!important;}
@@ -2915,4 +2963,8 @@
 
 /* 9.6 THEMES/MODES */
 /* 9.6.1 NO PARTICIPATIONS MODE */
+<<<<<<< HEAD
 /* 9.6.2 NIGHT MODE */
+=======
+/* 9.6.2 NIGHT MODE */
+>>>>>>> origin/master

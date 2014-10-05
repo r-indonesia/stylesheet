@@ -65,4 +65,8 @@
 		/* 9.5.1 NEW COMMENTS */
 	/* 9.6 THEMES/MODES */
 		/* 9.6.1 NO PARTICIPATIONS MODE */
+<<<<<<< HEAD
 		/* 9.6.2 NIGHT MODE */
+=======
+		/* 9.6.2 NIGHT MODE */
+>>>>>>> origin/master
